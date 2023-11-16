@@ -1,18 +1,22 @@
 # Run time configuration for Module Federation - Example
 
+Run time configuration for Micro Front Ends gives a good developer experience as it allows a developer to integrate a module being developed locally into a deployed environment. Single Spa does this very successfully.
+
+This demo shows an implementation for Module Federation that implements a similar structure to the Single Spa devtools functionality.
+
 ## Running the Example
 
 ### Install
 
 - Open the complete project in VS Code
-- open a terminal for each project (except styleguide2)
--- host
--- components
--- styleguide
+- Open a terminal for each project (except styleguide2)
+    - host
+    - components
+    - styleguide
 - in each terminal Run
--- npm i
+    - ```npm i```
 - in each terminal Run
--- npm start
+    - ```npm start```
 
 Each project will open a new window
 - 3060: Host application
@@ -32,8 +36,8 @@ the new style guide will be loaded at http://localhost:3063 - (note the differen
 In the Host window (http://localhost:3060)
 - open the Browser Devtools
 - add a new localstorage value
--- name: Devtools
--- value: true
+    - name: Devtools
+    - value: true
 - Once the localstorage value is set, in the bottom right hand corner a devtools button will be displayed
 - click on the devtools button
 - in the modal, click on the edit button for the style guide
