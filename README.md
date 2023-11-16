@@ -36,7 +36,7 @@ the new style guide will be loaded at http://localhost:3063 - (note the differen
 In the Host window (http://localhost:3060)
 - open the Browser Devtools
 - add a new localstorage value
-    - name: Devtools
+    - name: devtools
     - value: true
 - Once the localstorage value is set, in the bottom right hand corner a devtools button will be displayed
 - click on the devtools button
