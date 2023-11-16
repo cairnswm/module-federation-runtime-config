@@ -1,0 +1,145 @@
+.devtools {
+    
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+    border-radius: 5px;
+
+  & .devtoolsoverride {
+    background-color: #ffaa00;
+    height: 50px;
+    width: 50px;
+    border: 2px #999999 solid;
+    border-radius: 5px;
+    color: #999999;
+    padding: 9px 7px;
+    &:hover {
+      background-color: #ff5500;
+      color: #444444;
+    }
+  }
+
+  & .modal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  & .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    & p {
+      font-size: 1rem;
+    }
+    & input {
+      font-size: 1rem;
+      width: 90%;
+    }
+
+    & button {
+      border: 1px solid lightgrey;
+      border-radius: 5px;
+      background-color: #ffaa00;
+      padding: 8px 16px;
+      &:hover {
+        background-color: #ff5500;
+        color: #444444;
+      }
+    }
+    & button.small {
+      border: 1px solid lightgrey;
+      border-radius: 5px;
+      background-color: #ffaa00;
+      padding: 3px 10px 0px;
+      font-size: 1rem;
+      &:hover {
+        background-color: #ff5500;
+        color: #444444;
+      }
+    }
+    & button.save {
+      border: 1px solid lightgrey;
+      border-radius: 5px;
+      background-color: #ffaa00;
+      padding: 8px 16px;
+      &:hover {
+        background-color: #ff5500;
+        color: #444444;
+      }
+    }    
+
+    & .flex {
+      font-size: 1rem;
+      display: flex;
+      flex-direction: row;
+      overflow-x: hidden;
+      
+      &:hover {
+        background-color: #FFEEDD;
+        color: #444444;
+      }
+      &.noselect {
+        padding: 4px;
+      }
+      &.noselect:hover {
+        background-color: inherit;
+        color: inherit;
+      }
+    }
+    & .flexcell {
+      border: 1px solid lightgrey;
+      overflow-x: hidden;
+      padding: 8px 10px 0px;
+      width: 37%;
+    }
+    & .cell1 {
+      width: 20%;
+      
+    }
+    
+    & .cell4 {
+      width: 4%;
+      padding: 3px 10px;
+    }
+    
+    & .cell10 {
+      width: 10%;
+    } 
+    & .cell40 {
+      width: 40%;
+    }        
+    & .cell50 {
+      width: 50%;
+    }
+    & .cell60 {
+      width: 60%;
+    }
+  }
+  
+  /* The Close Button */
+  & .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  & .close:hover,
+  & .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
